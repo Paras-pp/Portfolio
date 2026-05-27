@@ -1,14 +1,17 @@
 import { useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleMobileMenu, closeMobileMenu, setScrolled } from '../features/ui/uiSlice'
 
 const links = [
-  { href: '#about',      label: 'About'      },
-  { href: '#experience', label: 'Experience' },
-  { href: '#skills',     label: 'Skills'     },
-  { href: '#projects',   label: 'Projects'   },
-  { href: '#contact',    label: 'Contact'    },
+  { to: '/',         label: 'Home'     },
+  { to: '/about',    label: 'About'    },
+  { to: '/projects', label: 'Projects' },
+  { to: '/contact',  label: 'Contact'  },
 ]
+
+const linkClass = ({ isActive }) =>
+  isActive ? 'nav-active' : undefined
 
 export default function Navbar() {
   const dispatch = useDispatch()
@@ -25,20 +28,28 @@ export default function Navbar() {
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="navbar-inner">
-        <a href="#home" className="navbar-logo" onClick={close}>
+        <NavLink to="/" className="navbar-logo" onClick={close}>
           Paras<span>.</span>
-        </a>
+        </NavLink>
 
         <ul className="navbar-links">
           {links.map(l => (
-            <li key={l.href}>
-              <a href={l.href}>{l.label}</a>
+            <li key={l.to}>
+              <NavLink
+                to={l.to}
+                end={l.to === '/'}
+                className={linkClass}
+              >
+                {l.label}
+              </NavLink>
             </li>
           ))}
         </ul>
 
         <div className="navbar-cta">
-          <a href="#contact" className="btn btn-primary">Hire Me</a>
+          <NavLink to="/contact" className="btn btn-primary" onClick={close}>
+            Hire Me
+          </NavLink>
         </div>
 
         <button
@@ -53,18 +64,21 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="mobile-menu">
           {links.map(l => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="mobile-link"
+            <NavLink
+              key={l.to}
+              to={l.to}
+              end={l.to === '/'}
+              className={({ isActive }) =>
+                `mobile-link${isActive ? ' nav-active' : ''}`
+              }
               onClick={close}
             >
               {l.label}
-            </a>
+            </NavLink>
           ))}
-          <a href="#contact" className="btn btn-primary mobile-cta" onClick={close}>
+          <NavLink to="/contact" className="btn btn-primary mobile-cta" onClick={close}>
             Hire Me
-          </a>
+          </NavLink>
         </div>
       )}
     </nav>
