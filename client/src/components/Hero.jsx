@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 
 const roles = [
   'Frontend Developer',
@@ -79,8 +78,8 @@ export default function Hero() {
             </p>
 
             <div className="hero-actions">
-              <Link to="/projects" className="btn btn-primary">View My Work →</Link>
-              <Link to="/contact" className="btn btn-outline">Get In Touch</Link>
+              <a href="#projects" className="btn btn-primary">View My Work →</a>
+              <a href="#contact" className="btn btn-outline">Get In Touch</a>
             </div>
 
             <div className="hero-social">

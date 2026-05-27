@@ -4,10 +4,25 @@ import { store } from './app/store'
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import HomePage from './pages/HomePage'
-import AboutPage from './pages/AboutPage'
-import ProjectsPage from './pages/ProjectsPage'
-import ContactPage from './pages/ContactPage'
+import Hero from './components/Hero'
+import About from './components/About'
+import Experience from './components/Experience'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+
+function MainPage() {
+  return (
+    <>
+      <Hero />
+      <About />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Contact />
+    </>
+  )
+}
 
 export default function App() {
   return (
@@ -16,10 +31,7 @@ export default function App() {
         <Navbar />
         <main>
           <Routes>
-            <Route path="/"        element={<HomePage />}    />
-            <Route path="/about"   element={<AboutPage />}   />
-            <Route path="/projects" element={<ProjectsPage />} />
-            <Route path="/contact" element={<ContactPage />}  />
+            <Route path="/" element={<MainPage />} />
           </Routes>
         </main>
         <Footer />
