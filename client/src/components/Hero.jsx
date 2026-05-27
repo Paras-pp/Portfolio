@@ -71,11 +71,12 @@ export default function Hero() {
             <p className="hero-description">
               Software Engineer at{' '}
               <strong style={{ color: 'var(--gray-700)' }}>LTIMindtree</strong>{' '}
-              crafting React frontends and Node.js APIs with a quality-first mindset.
+              crafting React frontends and Node.js backends with a quality-first mindset.
               2 years of production experience shipping scalable web applications —
-              from pixel-perfect UIs to automated test frameworks.
+              from pixel-perfect UIs to automated test frameworks — with a consistent
+              focus on clean architecture, performance, and maintainable code.
               <span style={{ display: 'block', marginTop: '10px', fontSize: '0.9rem', color: 'var(--gray-400)' }}>
-                📍 Pune, Maharashtra &nbsp;·&nbsp; 🎓 B.E. Electronics &amp; Data Science &nbsp;·&nbsp; 🏅 GitHub Copilot Certified
+                📍 Pune, Maharashtra &nbsp;·&nbsp; 🎓 B.E. Electronics & Telecommunication &amp; Data Science &nbsp;·&nbsp; 🏅 GitHub Copilot Certified
               </span>
             </p>
 
