@@ -1,45 +1,75 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { toggleMobileMenu, closeMobileMenu, setScrolled } from '../features/ui/uiSlice'
 
 const links = [
-  { href: '#about',      label: 'About'      },
-  { href: '#experience', label: 'Experience' },
-  { href: '#skills',     label: 'Skills'     },
-  { href: '#projects',   label: 'Projects'   },
-  { href: '#contact',    label: 'Contact'    },
+  { to: '/about',    label: 'About'    },
+  { to: '/projects', label: 'Projects' },
+  { to: '/contact',  label: 'Contact'  },
 ]
 
+const navClass = ({ isActive }) => isActive ? 'nav-active' : undefined
+
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
+  const dispatch = useDispatch()
+  const { scrolled, mobileMenuOpen } = useSelector(state => state.ui)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20)
+    const onScroll = () => dispatch(setScrolled(window.scrollY > 20))
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  }, [dispatch])
 
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="navbar-inner">
-        <a href="#home" className="navbar-logo">
+        <NavLink to="/" className="navbar-logo" onClick={() => dispatch(closeMobileMenu())}>
           Paras<span>.</span>
-        </a>
+        </NavLink>
 
         <ul className="navbar-links">
           {links.map(l => (
-            <li key={l.href}>
-              <a href={l.href}>{l.label}</a>
+            <li key={l.to}>
+              <NavLink to={l.to} className={navClass}>{l.label}</NavLink>
             </li>
           ))}
         </ul>
 
         <div className="navbar-cta">
-          <a href="#contact" className="btn btn-primary">Hire Me</a>
+          <NavLink to="/contact" className="btn btn-primary">Hire Me</NavLink>
         </div>
 
-        <button className="hamburger" aria-label="Menu">
+        <button
+          className={`hamburger${mobileMenuOpen ? ' open' : ''}`}
+          onClick={() => dispatch(toggleMobileMenu())}
+          aria-label="Toggle menu"
+        >
           <span /><span /><span />
         </button>
       </div>
+
+      {mobileMenuOpen && (
+        <div className="mobile-menu">
+          {links.map(l => (
+            <NavLink
+              key={l.to}
+              to={l.to}
+              className={({ isActive }) => `mobile-link${isActive ? ' nav-active' : ''}`}
+              onClick={() => dispatch(closeMobileMenu())}
+            >
+              {l.label}
+            </NavLink>
+          ))}
+          <NavLink
+            to="/contact"
+            className="btn btn-primary mobile-cta"
+            onClick={() => dispatch(closeMobileMenu())}
+          >
+            Hire Me
+          </NavLink>
+        </div>
+      )}
     </nav>
   )
 }

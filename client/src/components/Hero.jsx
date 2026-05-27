@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const roles = [
   'Frontend Developer',
@@ -70,20 +71,21 @@ export default function Hero() {
             </div>
 
             <p className="hero-description">
-              Software Engineer with ~2 years at <strong style={{ color: 'var(--gray-700)' }}>LTIMindtree</strong> —
+              Software Engineer with ~2 years at{' '}
+              <strong style={{ color: 'var(--gray-700)' }}>LTIMindtree</strong> —
               bridging quality engineering and frontend development.
-              Proficient in React, Node.js, Java & Selenium.
+              Proficient in React, Node.js, Java &amp; Selenium.
               Certified in GitHub Copilot Fundamentals.
             </p>
 
             <div className="hero-actions">
-              <a href="#projects" className="btn btn-primary">View My Work →</a>
-              <a href="#contact" className="btn btn-outline">Get In Touch</a>
+              <Link to="/projects" className="btn btn-primary">View My Work →</Link>
+              <Link to="/contact" className="btn btn-outline">Get In Touch</Link>
             </div>
 
             <div className="hero-social">
               <span className="hero-social-label">Find me on</span>
-              <a href="https://github.com" className="social-link" target="_blank" rel="noopener noreferrer" title="GitHub">
+              <a href="https://github.com/Paras-pp" className="social-link" target="_blank" rel="noopener noreferrer" title="GitHub">
                 <GithubIcon />
               </a>
               <a href="https://linkedin.com/in/paras-pandita" className="social-link" target="_blank" rel="noopener noreferrer" title="LinkedIn">

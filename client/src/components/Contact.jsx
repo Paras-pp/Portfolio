@@ -1,8 +1,10 @@
-import { useState, useRef, useEffect } from 'react'
+import { useEffect, useRef } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { updateField, submitContact } from '../features/contact/contactSlice'
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
-  const [status, setStatus] = useState('idle')
+  const dispatch = useDispatch()
+  const { form, status, error } = useSelector(state => state.contact)
   const ref = useRef(null)
 
   useEffect(() => {
@@ -17,26 +19,12 @@ export default function Contact() {
     return () => observer.disconnect()
   }, [])
 
-  const update = key => e => setForm(f => ({ ...f, [key]: e.target.value }))
+  const update = field => e =>
+    dispatch(updateField({ field, value: e.target.value }))
 
-  const handleSubmit = async e => {
+  const handleSubmit = e => {
     e.preventDefault()
-    setStatus('loading')
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      })
-      if (res.ok) {
-        setStatus('success')
-        setForm({ name: '', email: '', subject: '', message: '' })
-      } else {
-        setStatus('error')
-      }
-    } catch {
-      setStatus('error')
-    }
+    dispatch(submitContact(form))
   }
 
   return (
@@ -70,12 +58,7 @@ export default function Contact() {
                   <div className="contact-item-value">+91 7006353235</div>
                 </div>
               </a>
-              <a
-                href="https://linkedin.com/in/paras-pandita"
-                className="contact-item"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://linkedin.com/in/paras-pandita" className="contact-item" target="_blank" rel="noopener noreferrer">
                 <div className="contact-icon">💼</div>
                 <div>
                   <div className="contact-item-label">LinkedIn</div>
@@ -152,7 +135,7 @@ export default function Contact() {
               )}
               {status === 'error' && (
                 <p style={{ color: '#dc2626', fontSize: '0.875rem', marginTop: '12px' }}>
-                  Something went wrong. Please email me directly at paras.pandita1999@gmail.com
+                  {error || 'Something went wrong. Please email me directly.'}
                 </p>
               )}
             </form>
