@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom'
 
 const roles = [
   'Frontend Developer',
-  'React.js Developer',
-  'QA Automation Engineer',
-  'Full Stack Developer',
+  'Software Engineer',
 ]
 
 const GithubIcon = () => (
@@ -71,11 +69,14 @@ export default function Hero() {
             </div>
 
             <p className="hero-description">
-              Software Engineer with ~2 years at{' '}
-              <strong style={{ color: 'var(--gray-700)' }}>LTIMindtree</strong> —
-              bridging quality engineering and frontend development.
-              Proficient in React, Node.js, Java &amp; Selenium.
-              Certified in GitHub Copilot Fundamentals.
+              Software Engineer at{' '}
+              <strong style={{ color: 'var(--gray-700)' }}>LTIMindtree</strong>{' '}
+              crafting React frontends and Node.js APIs with a quality-first mindset.
+              2 years of production experience shipping scalable web applications —
+              from pixel-perfect UIs to automated test frameworks.
+              <span style={{ display: 'block', marginTop: '10px', fontSize: '0.9rem', color: 'var(--gray-400)' }}>
+                📍 Pune, Maharashtra &nbsp;·&nbsp; 🎓 B.E. Electronics &amp; Data Science &nbsp;·&nbsp; 🏅 GitHub Copilot Certified
+              </span>
             </p>
 
             <div className="hero-actions">
