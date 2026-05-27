@@ -76,7 +76,7 @@ export default function Hero() {
               and now channeling that same precision into building React frontends and Node.js backends.
               A developer who ships clean, well-tested code — because catching bugs early is second nature.
               <span style={{ display: 'block', marginTop: '10px', fontSize: '0.9rem', color: 'var(--gray-400)' }}>
-                📍 Pune, Maharashtra &nbsp;·&nbsp; 🎓 B.E. Electronics &amp; Telecommunication · Data Science &nbsp;·&nbsp; 🏅 GitHub Copilot Certified
+                📍 Pune, Maharashtra &nbsp;·&nbsp; 🎓 B.E. Electronics &amp; Telecommunication (Hons. Data Science) &nbsp;·&nbsp; 🏅 GitHub Copilot Certified
               </span>
             </p>
 
