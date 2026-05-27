@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleMobileMenu, closeMobileMenu, setScrolled } from '../features/ui/uiSlice'
 
@@ -9,9 +9,6 @@ const links = [
   { to: '/projects', label: 'Projects' },
   { to: '/contact',  label: 'Contact'  },
 ]
-
-const linkClass = ({ isActive }) =>
-  isActive ? 'nav-active' : undefined
 
 export default function Navbar() {
   const dispatch = useDispatch()
@@ -28,28 +25,22 @@ export default function Navbar() {
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="navbar-inner">
-        <NavLink to="/" className="navbar-logo" onClick={close}>
+        <Link to="/" className="navbar-logo" onClick={close}>
           Paras<span>.</span>
-        </NavLink>
+        </Link>
 
         <ul className="navbar-links">
           {links.map(l => (
             <li key={l.to}>
-              <NavLink
-                to={l.to}
-                end={l.to === '/'}
-                className={linkClass}
-              >
-                {l.label}
-              </NavLink>
+              <Link to={l.to}>{l.label}</Link>
             </li>
           ))}
         </ul>
 
         <div className="navbar-cta">
-          <NavLink to="/contact" className="btn btn-primary" onClick={close}>
+          <Link to="/contact" className="btn btn-primary" onClick={close}>
             Hire Me
-          </NavLink>
+          </Link>
         </div>
 
         <button
@@ -64,21 +55,18 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="mobile-menu">
           {links.map(l => (
-            <NavLink
+            <Link
               key={l.to}
               to={l.to}
-              end={l.to === '/'}
-              className={({ isActive }) =>
-                `mobile-link${isActive ? ' nav-active' : ''}`
-              }
+              className="mobile-link"
               onClick={close}
             >
               {l.label}
-            </NavLink>
+            </Link>
           ))}
-          <NavLink to="/contact" className="btn btn-primary mobile-cta" onClick={close}>
+          <Link to="/contact" className="btn btn-primary mobile-cta" onClick={close}>
             Hire Me
-          </NavLink>
+          </Link>
         </div>
       )}
     </nav>
