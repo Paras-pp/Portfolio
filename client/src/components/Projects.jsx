@@ -27,6 +27,16 @@ const projects = [
     github: 'https://github.com',
     live: null,
   },
+  {
+    cover: 'project-cover-3',
+    emoji: '🛒',
+    title: 'Ekart — E-Commerce App',
+    description:
+      'Full-stack e-commerce application with product browsing, cart management, checkout flow, and order tracking. Built with React and Redux Toolkit on the frontend and an Express.js REST API on the backend.',
+    tags: ['React.js', 'Redux Toolkit', 'React Router', 'Express.js'],
+    github: 'https://github.com/Paras-pp',
+    live: null,
+  },
 ]
 
 export default function Projects() {
