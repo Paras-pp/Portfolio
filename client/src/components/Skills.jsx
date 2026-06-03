@@ -4,12 +4,12 @@ const categories = [
   {
     icon: '🎨',
     title: 'Frontend',
-    skills: ['React.js', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Responsive Design', 'Component Architecture'],
+    skills: ['React.js', 'Redux Toolkit', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Responsive Design', 'React Router', 'Vite'],
   },
   {
     icon: '⚙️',
     title: 'Backend & Languages',
-    skills: ['Node.js',  'REST APIs', 'Java', 'OOP'],
+    skills: ['Node.js', 'Express.js', 'REST APIs', 'Java', 'OOP'],
   },
   {
     icon: '🧪',

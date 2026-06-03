@@ -2,8 +2,8 @@ import { useEffect, useRef } from 'react'
 
 const stats = [
   { number: '~2', label: 'Years Exp.' },
-  { number: '2+', label: 'Projects'   },
-  { number: '10+', label: 'Technologies' },
+  { number: '3+', label: 'Projects'   },
+  { number: '15+', label: 'Technologies' },
 ]
 
 export default function About() {
@@ -47,10 +47,10 @@ export default function About() {
             </h2>
 
             <p className="about-bio">
-              Results-driven Software Engineer with ~2 years of experience at <strong>LTIMindtree</strong> spanning
-              quality engineering and transitioning into frontend development. Proficient in Java, Selenium,
-              React, and Node.js with a solid foundation in SDLC/STLC. Actively expanding expertise in modern
-              front-end and back-end technologies. Seeking a developer role to build scalable, high-quality software.
+              Software Engineer at <strong>LTIMindtree</strong> with ~2 years of experience spanning QA automation
+              and frontend development. Built Java + Selenium frameworks that cut regression effort by ~40%, then
+              channelled that same precision into React and Node.js. I write well-tested, maintainable code —
+              because shipping quality was never optional. Now actively seeking a frontend or full-stack developer role.
             </p>
 
             <div className="cert-badge">

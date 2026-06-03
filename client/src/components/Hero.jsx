@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 const roles = [
   'Frontend Developer',
+  'QA Automation Engineer',
   'Software Engineer',
 ]
 
@@ -114,8 +115,9 @@ export default function Hero() {
                 <span className="code-line">{'  '}<span className="c-prop">role</span><span className="c-punct">: </span><span className="c-string">"Frontend Developer"</span><span className="c-punct">,</span></span>
                 <span className="code-line">{'  '}<span className="c-prop">company</span><span className="c-punct">: </span><span className="c-string">"LTIMindtree"</span><span className="c-punct">,</span></span>
                 <span className="code-line">{'  '}<span className="c-prop">stack</span><span className="c-punct">: [</span></span>
-                <span className="code-line">{'    '}<span className="c-string">"React"</span><span className="c-punct">, </span><span className="c-string">"Node.js"</span><span className="c-punct">,</span></span>
-                <span className="code-line">{'    '}<span className="c-string">"Java"</span><span className="c-punct">, </span><span className="c-string">"Selenium"</span></span>
+                <span className="code-line">{'    '}<span className="c-string">"React"</span><span className="c-punct">, </span><span className="c-string">"Redux"</span><span className="c-punct">,</span></span>
+                <span className="code-line">{'    '}<span className="c-string">"Node.js"</span><span className="c-punct">, </span><span className="c-string">"Java"</span><span className="c-punct">,</span></span>
+                <span className="code-line">{'    '}<span className="c-string">"Selenium"</span></span>
                 <span className="code-line">{'  '}<span className="c-punct">],</span></span>
                 <span className="code-line">{'  '}<span className="c-prop">location</span><span className="c-punct">: </span><span className="c-string">"Pune, MH"</span><span className="c-punct">,</span></span>
                 <span className="code-line">{'  '}<span className="c-prop">openToWork</span><span className="c-punct">: </span><span className="c-keyword">true</span></span>

@@ -12,19 +12,19 @@ const projects = [
     emoji: '🌐',
     title: 'Portfolio Website',
     description:
-      'Designed and built a personal portfolio site using React.js with responsive UI and component-based architecture. Features smooth scroll, animations, and a Node.js contact API.',
-    tags: ['React.js', 'JavaScript', 'CSS3', 'Node.js'],
-    github: 'https://github.com',
-    live: '#',
+      'Built a full-stack portfolio with React.js (Vite), React Router v7, Redux Toolkit, and a Node.js/Express contact API — no UI library used. Implemented a CSS design system from scratch with scroll-triggered reveal animations, typewriter effects, and a fully responsive layout.',
+    tags: ['React.js', 'Redux Toolkit', 'Node.js', 'CSS3'],
+    github: 'https://github.com/Paras-pp/portfolio',
+    live: null,
   },
   {
     cover: 'project-cover-2',
     emoji: '🧪',
     title: 'Test Automation Framework',
     description:
-      'Built a page-object model (POM) based automation framework for a web application with cross-browser support. Integrated data-driven test execution covering multiple scenarios with minimal code changes.',
+      'Engineered a POM-based Selenium framework in Java that cut manual regression effort by ~40%. Structured around data-driven execution, cross-browser configuration, and JUnit test runners — enabling the team to add new test cases with minimal code duplication.',
     tags: ['Java', 'Selenium WebDriver', 'JUnit', 'POM'],
-    github: 'https://github.com',
+    github: 'https://github.com/Paras-pp',
     live: null,
   },
   {
@@ -32,8 +32,8 @@ const projects = [
     emoji: '🛒',
     title: 'Ekart — E-Commerce App',
     description:
-      'Full-stack e-commerce application with product browsing, cart management, checkout flow, and order tracking. Built with React and Redux Toolkit on the frontend and an Express.js REST API on the backend.',
-    tags: ['React.js', 'Redux Toolkit', 'React Router', 'Express.js'],
+      'Full-stack e-commerce platform with product catalog, cart management, checkout flow, and order tracking. React + Redux Toolkit handle global state via async thunks; an Express.js REST API powers the backend. Demonstrates protected routes, optimistic UI, and real-world async patterns.',
+    tags: ['React.js', 'Redux Toolkit', 'Express.js', 'React Router'],
     github: 'https://github.com/Paras-pp',
     live: null,
   },
