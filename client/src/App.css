@@ -429,6 +429,7 @@ section { padding: 100px 0; }
   color: white;
   position: relative;
   box-shadow: var(--shadow-xl);
+  overflow: hidden;
 }
 .avatar-badge {
   position: absolute;
