@@ -27,19 +27,21 @@ export default function About() {
         <div className="about-grid">
 
           <div className="about-visual reveal">
-            <div className="avatar-frame">
-              <img
-                src="/profile.jpg"
-                alt="Paras Pandita"
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  objectPosition: 'center top',
-                  transform: 'scale(1.1)',
-                  borderRadius: 'inherit',
-                }}
-              />
+            <div className="avatar-wrapper">
+              <div className="avatar-frame">
+                <img
+                  src="/profile.jpg"
+                  alt="Paras Pandita"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    objectPosition: 'center top',
+                    transform: 'scale(1.1)',
+                    borderRadius: 'inherit',
+                  }}
+                />
+              </div>
               <div className="avatar-badge">
                 <div className="avatar-badge-icon">📍</div>
                 <div>

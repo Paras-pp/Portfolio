@@ -418,8 +418,12 @@ section { padding: 100px 0; }
 
 .about-visual { display: flex; justify-content: center; }
 
+.avatar-wrapper {
+  position: relative;
+  display: inline-block;
+}
 .avatar-frame {
-  width: 270px; height: 270px;
+  width: 270px; height: 340px;
   border-radius: var(--radius-xl);
   background: linear-gradient(135deg, var(--indigo-500), var(--indigo-700));
   display: flex;
