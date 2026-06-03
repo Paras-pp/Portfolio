@@ -44,10 +44,8 @@ export default function About() {
               </div>
               <div className="avatar-badge">
                 <div className="avatar-badge-icon">📍</div>
-                <div>
-                  <div className="stat-label">Location</div>
-                  <div style={{ fontWeight: 700, color: 'var(--indigo-600)', fontSize: '0.875rem' }}>Pune, MH</div>
-                </div>
+                <span className="stat-label">Location</span>
+                <span style={{ fontWeight: 700, color: 'var(--indigo-600)', fontSize: '0.875rem' }}>Pune, MH</span>
               </div>
             </div>
           </div>
