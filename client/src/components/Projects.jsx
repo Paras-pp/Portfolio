@@ -32,8 +32,8 @@ const projects = [
     emoji: '🛒',
     title: 'Ekart — E-Commerce App',
     description:
-      'Full-stack e-commerce platform with product catalog, cart management, checkout flow, and order tracking. React + Redux Toolkit handle global state via async thunks; an Express.js REST API powers the backend. Demonstrates protected routes, optimistic UI, and real-world async patterns.',
-    tags: ['React.js', 'Redux Toolkit', 'Express.js', 'React Router'],
+      'Full-stack e-commerce platform with product catalog, cart management, checkout flow, and order tracking. React + Redux Toolkit handle global state via async thunks. Demonstrates protected routes, optimistic UI, and real-world async patterns.',
+    tags: ['React.js', 'Redux Toolkit', 'React Router', 'Node.js'],
     github: 'https://github.com/Paras-pp',
     live: null,
   },

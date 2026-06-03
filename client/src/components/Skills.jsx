@@ -9,7 +9,7 @@ const categories = [
   {
     icon: '⚙️',
     title: 'Backend & Languages',
-    skills: ['Node.js', 'Express.js', 'REST APIs', 'Java', 'OOP'],
+    skills: ['Node.js', 'REST APIs', 'Java', 'OOP'],
   },
   {
     icon: '🧪',
