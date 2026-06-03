@@ -420,7 +420,9 @@ section { padding: 100px 0; }
 
 .avatar-wrapper {
   position: relative;
-  display: inline-block;
+  width: 270px;
+  height: 340px;
+  flex-shrink: 0;
 }
 .avatar-frame {
   width: 270px; height: 340px;
