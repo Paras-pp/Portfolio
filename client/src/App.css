@@ -439,13 +439,13 @@ section { padding: 100px 0; }
 }
 .avatar-badge {
   position: absolute;
-  bottom: -18px;
+  bottom: -42px;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
   background: white;
   border-radius: var(--radius-md);
-  padding: 10px 16px;
+  padding: 6px 14px;
   box-shadow: var(--shadow-lg);
   display: flex;
   align-items: center;
