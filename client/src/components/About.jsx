@@ -36,7 +36,7 @@ export default function About() {
                   height: '100%',
                   objectFit: 'cover',
                   objectPosition: 'center top',
-                  transform: 'rotate(-90deg) scale(1.4)',
+                  transform: 'scale(1.1)',
                   borderRadius: 'inherit',
                 }}
               />
