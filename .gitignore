@@ -21,3 +21,6 @@ npm-debug.log*
 .vscode/
 *.suo
 *.user
+
+# Claude Code
+.claude/
