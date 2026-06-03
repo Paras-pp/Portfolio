@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 const roles = [
   'Frontend Developer',
-  'QA Automation Engineer',
   'Software Engineer',
 ]
 
