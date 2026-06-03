@@ -71,10 +71,10 @@ export default function Hero() {
             <p className="hero-description">
               Software Engineer at{' '}
               <strong style={{ color: 'var(--gray-700)' }}>LTIMindtree</strong>{' '}
-              with ~2 years of experience across quality engineering and frontend development.
-              Architected Java + Selenium automation frameworks that cut regression effort by ~40%,
-              and now channeling that same precision into building React frontends and Node.js backends.
-              A developer who ships clean, well-tested code — because catching bugs early is second nature.
+              with ~2 years of experience. Cut regression effort by ~40% building Java + Selenium
+              automation frameworks — then brought that same engineering discipline to React and Node.js.
+              I write code that ships and holds: clean, tested, maintainable. Now looking for a frontend
+              or full-stack role.
               <span style={{ display: 'block', marginTop: '10px', fontSize: '0.9rem', color: 'var(--gray-400)' }}>
                 📍 Pune, Maharashtra &nbsp;·&nbsp; 🎓 B.E. Electronics & &amp; Telecommunication (Hons. Data Science) &nbsp;·&nbsp; 🏅 GitHub Copilot Certified
               </span>
