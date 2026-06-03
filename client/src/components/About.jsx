@@ -47,10 +47,16 @@ export default function About() {
             </h2>
 
             <p className="about-bio">
-              Software Engineer at <strong>LTIMindtree</strong> with ~2 years of experience spanning QA automation
-              and frontend development. Built Java + Selenium frameworks that cut regression effort by ~40%, then
-              channelled that same precision into React and Node.js. I write well-tested, maintainable code —
-              because shipping quality was never optional. Now actively seeking a frontend or full-stack developer role.
+              I started my career breaking things on purpose — writing test suites, hunting edge cases, figuring out
+              exactly why something failed under load. That taught me how software actually works, and what
+              "done" really means.
+              <br /><br />
+              When I moved into frontend development, I brought that same obsession with correctness.
+              I care about component architecture, readable code, and UIs that behave predictably.
+              I don't just build features — I think about what happens when they break.
+              <br /><br />
+              Right now I'm deepening my React and Node.js skills, building projects, and looking for a team
+              where quality isn't an afterthought.
             </p>
 
             <div className="cert-badge">
