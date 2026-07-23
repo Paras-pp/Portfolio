@@ -58,11 +58,11 @@ export default function Contact() {
                   <div className="contact-item-value">+91 7006353235</div>
                 </div>
               </a>
-              <a href="https://linkedin.com/in/paras-pandita" className="contact-item" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/paras-pandita-084b57201" className="contact-item" target="_blank" rel="noopener noreferrer">
                 <div className="contact-icon">💼</div>
                 <div>
                   <div className="contact-item-label">LinkedIn</div>
-                  <div className="contact-item-value">linkedin.com/in/paras-pandita</div>
+                  <div className="contact-item-value">linkedin.com/in/paras-pandita-084b57201</div>
                 </div>
               </a>
               <div className="contact-item" style={{ cursor: 'default' }}>

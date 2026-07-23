@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 const roles = [
   'Frontend Developer',
+  'React Native Developer',
   'Software Engineer',
 ]
 
@@ -71,10 +72,11 @@ export default function Hero() {
             <p className="hero-description">
               Software Engineer at{' '}
               <strong style={{ color: 'var(--gray-700)' }}>LTIMindtree</strong>{' '}
-              with ~2 years of experience, now fully focused on React.js and full-stack development.
-              I care about clean architecture, readable code, and building UIs that work exactly the way
-              users expect. Structured thinking, attention to detail, and a drive to keep improving —
-              that's what I bring to every project. Open to frontend and full-stack roles.
+              with 2 years of experience, promoted twice in 20 months. Now building production-pattern
+              React and React Native applications — three shipped in 2026 covering authentication,
+              centralised state, navigation, and offline persistence. I care about clean architecture,
+              readable code, and building UIs that work exactly the way users expect. Open to frontend
+              and full-stack roles.
               <span style={{ display: 'block', marginTop: '10px', fontSize: '0.9rem', color: 'var(--gray-400)' }}>
                 📍 Pune, Maharashtra &nbsp;·&nbsp; 🎓 B.E. Electronics & &amp; Telecommunication (Hons. Data Science) &nbsp;·&nbsp; 🏅 GitHub Copilot Certified
               </span>
@@ -90,7 +92,7 @@ export default function Hero() {
               <a href="https://github.com/Paras-pp" className="social-link" target="_blank" rel="noopener noreferrer" title="GitHub">
                 <GithubIcon />
               </a>
-              <a href="https://linkedin.com/in/paras-pandita" className="social-link" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+              <a href="https://linkedin.com/in/paras-pandita-084b57201" className="social-link" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                 <LinkedinIcon />
               </a>
               <a href="mailto:paras.pandita1999@gmail.com" className="social-link" title="Email">
@@ -114,7 +116,7 @@ export default function Hero() {
                 <span className="code-line">{'  '}<span className="c-prop">role</span><span className="c-punct">: </span><span className="c-string">"Frontend Developer"</span><span className="c-punct">,</span></span>
                 <span className="code-line">{'  '}<span className="c-prop">company</span><span className="c-punct">: </span><span className="c-string">"LTIMindtree"</span><span className="c-punct">,</span></span>
                 <span className="code-line">{'  '}<span className="c-prop">stack</span><span className="c-punct">: [</span></span>
-                <span className="code-line">{'    '}<span className="c-string">"React"</span><span className="c-punct">, </span><span className="c-string">"Redux"</span><span className="c-punct">,</span></span>
+                <span className="code-line">{'    '}<span className="c-string">"React"</span><span className="c-punct">, </span><span className="c-string">"React Native"</span><span className="c-punct">,</span></span>
                 <span className="code-line">{'    '}<span className="c-string">"Node.js"</span><span className="c-punct">, </span><span className="c-string">"Java"</span><span className="c-punct">,</span></span>
                 <span className="code-line">{'    '}<span className="c-string">"Selenium"</span></span>
                 <span className="code-line">{'  '}<span className="c-punct">],</span></span>

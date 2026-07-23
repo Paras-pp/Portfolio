@@ -61,8 +61,8 @@ export default function About() {
               I care about component architecture, readable code, and UIs that behave predictably.
               I don't just build features — I think about what happens when they break.
               <br /><br />
-              Right now I'm deepening my React and Node.js skills, building projects, and looking for a team
-              where quality isn't an afterthought.
+              Right now I'm deepening my React, React Native, and Node.js skills, shipping full apps end to
+              end, and looking for a team where quality isn't an afterthought.
             </p>
 
             <div className="cert-badge">

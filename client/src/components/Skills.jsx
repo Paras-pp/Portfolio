@@ -4,22 +4,32 @@ const categories = [
   {
     icon: '🎨',
     title: 'Frontend',
-    skills: ['React.js', 'Redux Toolkit', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Responsive Design', 'React Router', 'Vite'],
+    skills: ['React.js', 'React Native', 'Expo', 'Expo Router', 'Redux Toolkit', 'React Navigation', 'Responsive Design', 'Component Architecture'],
+  },
+  {
+    icon: '💻',
+    title: 'Languages',
+    skills: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3', 'Java'],
   },
   {
     icon: '⚙️',
-    title: 'Backend & Languages',
-    skills: ['Node.js', 'REST APIs', 'Java', 'OOP'],
+    title: 'Backend',
+    skills: ['Node.js', 'Express.js', 'REST APIs'],
   },
   {
     icon: '🧪',
-    title: 'Testing & QA',
-    skills: ['Selenium WebDriver', 'JUnit', 'Test Automation', 'Regression Testing', 'Functional Testing', 'Page Object Model'],
+    title: 'Testing',
+    skills: ['Selenium WebDriver', 'JUnit', 'Test Automation', 'Regression Testing', 'Functional Testing'],
   },
   {
     icon: '🔧',
-    title: 'Tools & Concepts',
-    skills: ['Git', 'GitHub', 'GitHub Copilot', 'VS Code', 'JIRA', 'Agile/Scrum', 'CI/CD', 'SDLC/STLC'],
+    title: 'Tools',
+    skills: ['Git', 'GitHub', 'GitHub Copilot', 'VS Code', 'Netlify', 'JIRA'],
+  },
+  {
+    icon: '📐',
+    title: 'Concepts',
+    skills: ['SDLC / STLC', 'Agile / Scrum', 'CI/CD Fundamentals', 'OOP', 'Data Science'],
   },
 ]
 

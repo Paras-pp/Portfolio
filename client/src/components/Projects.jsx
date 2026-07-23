@@ -9,33 +9,33 @@ const GithubIcon = () => (
 const projects = [
   {
     cover: 'project-cover-1',
-    emoji: '🌐',
-    title: 'Portfolio Website',
+    emoji: '🎬',
+    title: 'Movie App',
     description:
-      'Built a full-stack portfolio with React.js (Vite), React Router v7, Redux Toolkit, and a Node.js/Express contact API — no UI library used. Implemented a CSS design system from scratch with scroll-triggered reveal animations, typewriter effects, and a fully responsive layout.',
-    tags: ['React.js', 'Redux Toolkit', 'Node.js', 'CSS3'],
-    github: 'https://github.com/Paras-pp/portfolio',
+      'Cross-platform mobile app built in React Native with Expo for browsing and discovering movies, with user authentication, movie listings, and multi-screen navigation. Centralised authentication and movie data in Redux Toolkit so session state stays consistent across every screen instead of being threaded through props, and structured navigation with React Navigation (native stack) so users move between the auth flow and browsing flow without losing state.',
+    tags: ['React Native', 'Expo', 'Redux Toolkit', 'React Navigation'],
+    github: 'https://github.com/Paras-pp/MovieApp',
     live: null,
   },
   {
     cover: 'project-cover-2',
-    emoji: '🧪',
-    title: 'Test Automation Framework',
+    emoji: '🎮',
+    title: 'Tic Tac Toe',
     description:
-      'Engineered a POM-based Selenium framework in Java that cut manual regression effort by ~40%. Structured around data-driven execution, cross-browser configuration, and JUnit test runners — enabling the team to add new test cases with minimal code duplication.',
-    tags: ['Java', 'Selenium WebDriver', 'JUnit', 'POM'],
-    github: 'https://github.com/Paras-pp',
+      'React Native game built on Expo Router, handling real-time board state, turn logic, and win detection. Scores and player progress are persisted with AsyncStorage so history survives app restarts, with board, turn, and score state modelled in Redux Toolkit for predictable updates and a single source of truth.',
+    tags: ['React Native', 'Expo Router', 'Redux Toolkit', 'AsyncStorage'],
+    github: 'https://github.com/Paras-pp/TicTacToe',
     live: null,
   },
   {
     cover: 'project-cover-3',
-    emoji: '🛒',
-    title: 'Ekart — E-Commerce App',
+    emoji: '🌐',
+    title: 'Portfolio Website',
     description:
-      'Full-stack e-commerce platform with product catalog, cart management, checkout flow, and order tracking. React + Redux Toolkit handle global state via async thunks. Demonstrates protected routes, optimistic UI, and real-world async patterns.',
-    tags: ['React.js', 'Redux Toolkit', 'React Router', 'Node.js'],
-    github: 'https://github.com/Paras-pp',
-    live: null,
+      'Built and shipped this responsive portfolio site in React.js (Vite) backed by a Node.js/Express contact API — no UI library used. Implemented a CSS design system from scratch with scroll-triggered reveal animations, typewriter effects, and a fully responsive layout, deployed on Netlify with continuous delivery from Git so every push to main ships to production automatically.',
+    tags: ['React.js', 'Node.js', 'Redux Toolkit', 'Netlify'],
+    github: 'https://github.com/Paras-pp/Portfolio',
+    live: 'https://paraspandita.netlify.app/',
   },
 ]
 
@@ -61,7 +61,7 @@ export default function Projects() {
           <span className="section-label">My Work</span>
           <h2 className="section-title">Featured Projects</h2>
           <p className="section-subtitle">
-            Projects that showcase my skills in React development and test automation
+            Projects that showcase my skills in React, React Native, and full-stack development
           </p>
         </div>
 

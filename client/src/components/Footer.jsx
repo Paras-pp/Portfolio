@@ -22,10 +22,10 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Paras Pandita · Built with React &amp; Node.js
           </p>
           <div className="footer-social">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <a href="https://github.com/Paras-pp" target="_blank" rel="noopener noreferrer" title="GitHub">
               <GithubIcon />
             </a>
-            <a href="https://linkedin.com/in/paras-pandita" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <a href="https://linkedin.com/in/paras-pandita-084b57201" target="_blank" rel="noopener noreferrer" title="LinkedIn">
               <LinkedinIcon />
             </a>
             <a href="mailto:paras.pandita1999@gmail.com" title="Email">
