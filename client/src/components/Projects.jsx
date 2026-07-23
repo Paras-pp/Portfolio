@@ -32,8 +32,8 @@ const projects = [
     emoji: '🌐',
     title: 'Portfolio Website',
     description:
-      'Built and shipped this responsive portfolio site in React.js (Vite) backed by a Node.js/Express contact API — no UI library used. Implemented a CSS design system from scratch with scroll-triggered reveal animations, typewriter effects, and a fully responsive layout, deployed on Netlify with continuous delivery from Git so every push to main ships to production automatically.',
-    tags: ['React.js', 'Node.js', 'Redux Toolkit', 'Netlify'],
+      'Built and shipped this responsive portfolio site in React.js (Vite) with Redux Toolkit for state and Netlify Forms handling contact submissions — no UI library used. Implemented a CSS design system from scratch with scroll-triggered reveal animations, typewriter effects, and a fully responsive layout, deployed on Netlify with continuous delivery from Git so every push to main ships to production automatically.',
+    tags: ['React.js', 'Redux Toolkit', 'Netlify Forms', 'Netlify'],
     github: 'https://github.com/Paras-pp/Portfolio',
     live: 'https://paraspandita.netlify.app/',
   },

@@ -1,16 +1,21 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
+const encodeFormData = data =>
+  Object.keys(data)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&')
+
 export const submitContact = createAsyncThunk(
   'contact/submit',
   async (formData, { rejectWithValue }) => {
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encodeFormData({ 'form-name': 'contact', ...formData }),
       })
       if (!res.ok) return rejectWithValue('Failed to send message.')
-      return await res.json()
+      return { success: true }
     } catch {
       return rejectWithValue('Network error. Please try again.')
     }
