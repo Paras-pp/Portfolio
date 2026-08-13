@@ -53,16 +53,17 @@ export default function About() {
             </h2>
 
             <p className="about-bio">
-              I started my career breaking things on purpose — writing test suites, hunting edge cases, figuring out
-              exactly why something failed under load. That taught me how software actually works, and what
-              "done" really means.
+              I'm a Frontend Developer who builds fast, accessible, and maintainable interfaces with
+              React, TypeScript, and modern CSS. I care about component architecture, readable code, and
+              UIs that behave exactly the way users expect.
               <br /><br />
-              When I moved into frontend development, I brought that same obsession with correctness.
-              I care about component architecture, readable code, and UIs that behave predictably.
-              I don't just build features — I think about what happens when they break.
+              My path into frontend runs through quality engineering, where I designed automated test
+              frameworks and caught defects early in the development cycle. That background shaped how I
+              write code today — I think about edge cases, cross-browser behavior, and reliability from
+              the start.
               <br /><br />
-              Right now I'm deepening my React, React Native, and Node.js skills, shipping full apps end to
-              end, and looking for a team where quality isn't an afterthought.
+              Right now I'm shipping full apps end to end with React, React Native, and Node.js, and
+              looking for a team where frontend quality isn't an afterthought.
             </p>
 
             <div className="cert-badge">
