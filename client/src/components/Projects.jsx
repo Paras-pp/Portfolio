@@ -8,6 +8,16 @@ const GithubIcon = () => (
 
 const projects = [
   {
+    cover: 'project-cover-4',
+    emoji: '🧵',
+    title: 'Textile Marketplace',
+    description:
+      'Full-stack B2B textile marketplace prototype built for a marketplace hackathon, connecting buyers and suppliers. Role-based buyer/supplier flows with JWT auth via httpOnly cookies, cart and order management, and a Cloudinary image pipeline on a Zod-validated Express + MongoDB API. Currently architecting an AI assistant layer — a Hugging Face-hosted LLM plus sentence-transformer embeddings for semantic product search — as the next milestone.',
+    tags: ['React', 'TypeScript', 'Express', 'MongoDB', 'JWT'],
+    github: 'https://github.com/Paras-pp/textile-marketplace',
+    live: null,
+  },
+  {
     cover: 'project-cover-1',
     emoji: '🎬',
     title: 'Movie App',
