@@ -17,19 +17,19 @@ const categories = [
     skills: ['Node.js', 'Express.js', 'REST APIs'],
   },
   {
-    icon: '🧪',
-    title: 'Testing',
-    skills: ['Selenium WebDriver', 'JUnit', 'Test Automation', 'Regression Testing', 'Functional Testing'],
-  },
-  {
     icon: '🔧',
     title: 'Tools',
-    skills: ['Git', 'GitHub', 'GitHub Copilot', 'VS Code', 'Netlify', 'JIRA'],
+    skills: ['Git', 'GitHub', 'GitHub Copilot', 'VS Code', 'Netlify'],
   },
   {
     icon: '📐',
     title: 'Concepts',
-    skills: ['SDLC / STLC', 'Agile / Scrum', 'CI/CD Fundamentals', 'OOP', 'Data Science'],
+    skills: ['Agile / Scrum', 'CI/CD Fundamentals', 'OOP', 'Data Science'],
+  },
+  {
+    icon: '🧪',
+    title: 'Test Automation',
+    skills: ['Selenium WebDriver', 'JUnit', 'Regression Testing'],
   },
 ]
 
@@ -55,7 +55,7 @@ export default function Skills() {
           <span className="section-label">Expertise</span>
           <h2 className="section-title">Technical Skills</h2>
           <p className="section-subtitle">
-            Technologies and tools I work with across development, testing, and automation
+            Technologies and tools I work with across frontend and full-stack development
           </p>
         </div>
 

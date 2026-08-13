@@ -20,10 +20,9 @@ const jobs = [
     company: 'LTIMindtree',
     period: 'Apr 2025 – Apr 2026',
     bullets: [
-      'Design and implement automated test frameworks using Java + Selenium, reducing manual regression effort by ~40%.',
-      'Develop reusable test utilities and page-object models to improve maintainability and reduce code duplication.',
-      'Collaborate with development teams during sprint reviews to identify defects early in the SDLC.',
-      'Leverage GitHub Copilot to accelerate test script development and enforce coding standards across the QA codebase.',
+      'Built reusable component and page-object patterns in Java, similar in spirit to modern frontend component architecture.',
+      'Partnered closely with development teams during sprint reviews, reviewing code and catching issues early in the SDLC.',
+      'Used GitHub Copilot to accelerate tooling development and enforce coding standards across the codebase.',
     ],
   },
   {
@@ -31,10 +30,8 @@ const jobs = [
     company: 'LTIMindtree',
     period: 'Nov 2024 – Apr 2025',
     bullets: [
-      'Validated end-to-end application functionality across web and API layers; maintained defect logs in JIRA.',
-      'Actively participated in test planning, test case design, and sprint retrospectives in an Agile environment.',
-      'Contributed to knowledge-sharing sessions on automation frameworks, elevating team capability.',
-      'Maintained high quality standards through systematic regression and sanity test cycles before each release.',
+      'Validated end-to-end application functionality across web and API layers, working closely with engineering teams to resolve issues.',
+      'Participated in sprint planning and retrospectives within an Agile/Scrum workflow.',
     ],
   },
   {
@@ -42,9 +39,7 @@ const jobs = [
     company: 'LTIMindtree',
     period: 'Aug 2024 – Nov 2024',
     bullets: [
-      'Completed structured training in Java, Selenium, and software testing methodologies within SDLC/STLC frameworks.',
-      'Assisted senior engineers in test execution, defect documentation, and test environment setup.',
-      'Built foundational knowledge in automation basics and contributed to test data preparation.',
+      'Completed structured training in Java and software engineering fundamentals, then supported senior engineers on live projects.',
     ],
   },
 ]
@@ -71,7 +66,7 @@ export default function Experience() {
           <span className="section-label">Career</span>
           <h2 className="section-title">Work Experience</h2>
           <p className="section-subtitle">
-            2+ years across QA automation at LTIMindtree and freelance frontend development
+            2+ years of software engineering experience, now focused on frontend development with React and TypeScript
           </p>
         </div>
 

@@ -39,8 +39,8 @@ export default function Contact() {
               <span className="gradient-text">together</span>
             </h2>
             <p className="contact-text">
-              I'm available for immediate joining and open to frontend developer,
-              full-stack, and QA automation roles. Let's connect!
+              I'm available for immediate joining and open to frontend developer
+              and full-stack roles. Let's connect!
             </p>
 
             <div className="contact-items">

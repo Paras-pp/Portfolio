@@ -72,10 +72,10 @@ export default function Hero() {
             <p className="hero-description">
               Frontend Developer at{' '}
               <strong style={{ color: 'var(--gray-700)' }}>Thrinaina Informatics</strong>{' '}
-              (freelance), with 2+ years of experience spanning QA automation at LTIMindtree and
-              production-pattern React and React Native applications — three shipped in 2026 covering
-              authentication, centralised state, navigation, and offline persistence. I care about clean
-              architecture, readable code, and building UIs that work exactly the way users expect. Open
+              (freelance), with 2+ years of software engineering experience. I build production-pattern
+              React and React Native applications — three shipped in 2026 covering authentication,
+              centralised state, navigation, and offline persistence. I care about clean architecture,
+              readable code, and building UIs that work exactly the way users expect. Open
               to frontend and full-stack roles.
               <span style={{ display: 'block', marginTop: '10px', fontSize: '0.9rem', color: 'var(--gray-400)' }}>
                 📍 Pune, Maharashtra &nbsp;·&nbsp; 🎓 B.E. Electronics & &amp; Telecommunication (Hons. Data Science) &nbsp;·&nbsp; 🏅 GitHub Copilot Certified
@@ -117,8 +117,7 @@ export default function Hero() {
                 <span className="code-line">{'  '}<span className="c-prop">company</span><span className="c-punct">: </span><span className="c-string">"Thrinaina Informatics"</span><span className="c-punct">,</span></span>
                 <span className="code-line">{'  '}<span className="c-prop">stack</span><span className="c-punct">: [</span></span>
                 <span className="code-line">{'    '}<span className="c-string">"React"</span><span className="c-punct">, </span><span className="c-string">"React Native"</span><span className="c-punct">,</span></span>
-                <span className="code-line">{'    '}<span className="c-string">"Node.js"</span><span className="c-punct">, </span><span className="c-string">"Java"</span><span className="c-punct">,</span></span>
-                <span className="code-line">{'    '}<span className="c-string">"Selenium"</span></span>
+                <span className="code-line">{'    '}<span className="c-string">"TypeScript"</span><span className="c-punct">, </span><span className="c-string">"Node.js"</span></span>
                 <span className="code-line">{'  '}<span className="c-punct">],</span></span>
                 <span className="code-line">{'  '}<span className="c-prop">location</span><span className="c-punct">: </span><span className="c-string">"Pune, MH"</span><span className="c-punct">,</span></span>
                 <span className="code-line">{'  '}<span className="c-prop">openToWork</span><span className="c-punct">: </span><span className="c-keyword">true</span></span>
