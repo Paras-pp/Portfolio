@@ -2,6 +2,20 @@ import { useEffect, useRef } from 'react'
 
 const jobs = [
   {
+    role: 'Frontend Developer',
+    company: 'Thrinaina Informatics Pvt Ltd',
+    companyNote: 'Freelance',
+    period: 'Apr 2026 – Present',
+    location: 'Hyderabad, Telangana · Remote',
+    bullets: [
+      'Built responsive, cross-browser interfaces using React, TypeScript, and modern CSS.',
+      'Created reusable component libraries, cutting development time by ~30%.',
+      'Optimized performance with lazy loading and code splitting, improving load times by ~40%.',
+      'Integrated REST and GraphQL APIs in collaboration with backend teams.',
+      'Translated Figma designs into pixel-perfect, accessible (WCAG 2.1 AA) UIs.',
+    ],
+  },
+  {
     role: 'Software Engineer – Quality & Automation',
     company: 'LTIMindtree',
     period: 'Apr 2025 – Apr 2026',
@@ -57,7 +71,7 @@ export default function Experience() {
           <span className="section-label">Career</span>
           <h2 className="section-title">Work Experience</h2>
           <p className="section-subtitle">
-            ~2 years at LTIMindtree progressing from apprentice to software engineer
+            2+ years across QA automation at LTIMindtree and freelance frontend development
           </p>
         </div>
 
@@ -71,7 +85,7 @@ export default function Experience() {
                   <span className="exp-period">{job.period}</span>
                 </div>
                 <p className="exp-company">
-                  <strong>{job.company}</strong> · Pune, Maharashtra
+                  <strong>{job.company}</strong>{job.companyNote ? ` · ${job.companyNote}` : ''} · {job.location || 'Pune, Maharashtra'}
                 </p>
                 <ul className="exp-bullets">
                   {job.bullets.map((b, j) => (

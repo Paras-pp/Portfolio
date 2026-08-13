@@ -70,13 +70,13 @@ export default function Hero() {
             </div>
 
             <p className="hero-description">
-              Software Engineer at{' '}
-              <strong style={{ color: 'var(--gray-700)' }}>LTIMindtree</strong>{' '}
-              with 2 years of experience, promoted twice in 20 months. Now building production-pattern
-              React and React Native applications — three shipped in 2026 covering authentication,
-              centralised state, navigation, and offline persistence. I care about clean architecture,
-              readable code, and building UIs that work exactly the way users expect. Open to frontend
-              and full-stack roles.
+              Frontend Developer at{' '}
+              <strong style={{ color: 'var(--gray-700)' }}>Thrinaina Informatics</strong>{' '}
+              (freelance), with 2+ years of experience spanning QA automation at LTIMindtree and
+              production-pattern React and React Native applications — three shipped in 2026 covering
+              authentication, centralised state, navigation, and offline persistence. I care about clean
+              architecture, readable code, and building UIs that work exactly the way users expect. Open
+              to frontend and full-stack roles.
               <span style={{ display: 'block', marginTop: '10px', fontSize: '0.9rem', color: 'var(--gray-400)' }}>
                 📍 Pune, Maharashtra &nbsp;·&nbsp; 🎓 B.E. Electronics & &amp; Telecommunication (Hons. Data Science) &nbsp;·&nbsp; 🏅 GitHub Copilot Certified
               </span>
@@ -114,7 +114,7 @@ export default function Hero() {
                 <span className="code-line"><span className="c-keyword">const </span><span className="c-var">dev</span><span className="c-punct"> = {'{'}</span></span>
                 <span className="code-line">{'  '}<span className="c-prop">name</span><span className="c-punct">: </span><span className="c-string">"Paras Pandita"</span><span className="c-punct">,</span></span>
                 <span className="code-line">{'  '}<span className="c-prop">role</span><span className="c-punct">: </span><span className="c-string">"Frontend Developer"</span><span className="c-punct">,</span></span>
-                <span className="code-line">{'  '}<span className="c-prop">company</span><span className="c-punct">: </span><span className="c-string">"LTIMindtree"</span><span className="c-punct">,</span></span>
+                <span className="code-line">{'  '}<span className="c-prop">company</span><span className="c-punct">: </span><span className="c-string">"Thrinaina Informatics"</span><span className="c-punct">,</span></span>
                 <span className="code-line">{'  '}<span className="c-prop">stack</span><span className="c-punct">: [</span></span>
                 <span className="code-line">{'    '}<span className="c-string">"React"</span><span className="c-punct">, </span><span className="c-string">"React Native"</span><span className="c-punct">,</span></span>
                 <span className="code-line">{'    '}<span className="c-string">"Node.js"</span><span className="c-punct">, </span><span className="c-string">"Java"</span><span className="c-punct">,</span></span>
