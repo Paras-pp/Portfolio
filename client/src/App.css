@@ -765,6 +765,7 @@ section { padding: 100px 0; }
 .project-cover-1 { background: linear-gradient(135deg, #667eea, #764ba2); }
 .project-cover-2 { background: linear-gradient(135deg, #f093fb, #f5576c); }
 .project-cover-3 { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+.project-cover-4 { background: linear-gradient(135deg, #fa709a, #fee140); }
 
 .project-body {
   padding: 24px;
